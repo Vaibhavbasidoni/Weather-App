@@ -123,12 +123,71 @@ body {
 
 /* Styles for mobile screens */
 @media screen and (max-width: 767px) {
-    /* Update styles for mobile screens */
-    .card {
-      /* Example mobile-specific styles */
-      width: 100%;
-      margin: 20px;
+    body, html {
+        overflow: auto; /* Allow vertical scrolling on mobile */
     }
-    /* Other mobile-specific styles */
-  }
-  
+
+    #video-background {
+        position: fixed; /* Add fixed position for video background on mobile */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: block; /* Display the video on mobile */
+    }
+
+    #bg-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card {
+        /* Example mobile-specific styles */
+        width: 90%; /* Adjust the width for better fitting on mobile */
+        max-width: 100%; /* Make sure it doesn't exceed the screen width */
+        margin: 20px auto; /* Center the card on mobile */
+    }
+
+    /* Adjust the font sizes for better fitting on mobile */
+    .weather h1 {
+        font-size: 40px;
+    }
+
+    /* Rest of the mobile-specific styles */
+}
+    
+    .weather h2 {
+        font-size: 35px; /* Reduce font size for city name on mobile */
+    }
+    
+    .weather-icon {
+        width: 100px; /* Reduce size of weather icon on mobile */
+        margin-top: 20px;
+    }
+    
+    .details {
+        flex-direction: column; /* Stack weather details vertically on mobile */
+        margin-top: 30px;
+    }
+    
+    .col {
+        margin-bottom: 10px; /* Add some spacing between weather details on mobile */
+    }
+    
+    .col img {
+        width: 40px; /* Reduce size of weather icons in weather details on mobile */
+    }
+    
+    .humidity, .wind {
+        font-size: 22px; /* Reduce font size for humidity and wind speed on mobile */
+        margin-top: 0; /* Remove negative margin */
+    }
+
+    /* Show the error message on a new line on mobile */
+    .error {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+    }
