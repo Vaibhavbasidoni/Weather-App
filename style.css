@@ -148,6 +148,18 @@ body {
         width: 90%; /* Adjust the width for better fitting on mobile */
         max-width: 100%; /* Make sure it doesn't exceed the screen width */
         margin: 20px auto; /* Center the card on mobile */
+        padding: 20px; /* Add some padding to the card on mobile */
+    }
+
+    .search {
+        flex-direction: column; /* Stack the search input and button on mobile */
+        align-items: center;
+    }
+
+    .search input {
+        margin-right: 0; /* Remove the margin between input and button on mobile */
+        margin-bottom: 10px; /* Add some space between input and button on mobile */
+        width: 100%; /* Make the input full width on mobile */
     }
 
     /* Adjust the font sizes for better fitting on mobile */
