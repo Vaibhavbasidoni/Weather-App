@@ -162,9 +162,9 @@ body {
         width: 100%; /* Make the input full width on mobile */
     }
 
-    /* Adjust the font sizes for better fitting on mobile */
+    /* Additional mobile-specific styles */
     .weather h1 {
-        font-size: 40px;
+        font-size: 60px; /* Reduce font size for weather temperature on mobile */
     }
 
     /* Rest of the mobile-specific styles */
